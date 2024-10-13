@@ -53,7 +53,7 @@
             </li>
           </ul>
         </address>
-        <button class="burger-button">
+        <button class="burger-button" data-menu-open type="button">
           <svg class="icon-burger" width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -67,7 +67,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-service" type="button">Order Service</button>
+          <button class="order-service" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -507,6 +509,7 @@
         </div>
       </section>
     </main>
+
     <!--footer-->
 
     <footer class="page-footer">
@@ -596,9 +599,9 @@
 
     <!----------------------------------backdrop-->
 
-    <div class="modal-fon hidden">
+    <div class="modal-fon" data-modal>
       <div class="modal-okno">
-        <button class="close-button" type="button">
+        <button class="close-button" data-modal-close type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
@@ -688,5 +691,78 @@
         </form>
       </div>
     </div>
+
+    <!------mobil-menu-->
+    <div class="burger-menu" data-menu>
+      <div class="mobile-menu">
+        <button class="close-button-mobile" data-menu-close type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-item">
+          <li class="mob-menu-link">
+            <a class="mob-menu-item" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-link">
+            <a class="mob-menu-item" href="">Portfolio</a>
+          </li>
+          <li class="mob-menu-link">
+            <a class="mob-menu-item" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-contacts">
+          <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social">
+          <li class="social-contact">
+            <a
+              class="social-link"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <svg class="icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-contact">
+            <a class="social-link" href="www.twitter.com" target="_blank">
+              <svg class="icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-twit"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-contact">
+            <a class="social-link" href="www.facebook.com" target="_blank">
+              <svg class="icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-face"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-contact">
+            <a class="social-link" href="https://linkedin.com" target="_blank">
+              <svg class="icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-link"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
