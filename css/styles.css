@@ -1692,6 +1692,7 @@ button {
 
 .logo-footer {
     margin-bottom: 16px;
+    padding-left: 86px;
 }
 
 .footer-text {
@@ -2880,6 +2881,10 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
 
+}
+
+.link-studio {
+    color: #404bbf
 }
 
 .mob-social {
