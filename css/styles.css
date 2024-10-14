@@ -253,6 +253,12 @@ button {
         font-style: normal;
         margin-left: auto;
     }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 /*desktop-version*/
@@ -287,6 +293,7 @@ button {
 
     .contacts-list {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 }
@@ -302,10 +309,24 @@ button {
     margin-left: auto;
     margin-right: auto;
     max-width: 320px;
-    padding: 72px 0;
-    height: 432px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    height: auto;
 
 }
+
+@media (min-device-pixel-ratio:2),
+(min-resolution:192dpi),
+(min-resolution:2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-hero.jpg);
+    }
+}
+
+
+
+
+
 
 .main-title {
     color: #ffffff;
@@ -323,7 +344,7 @@ button {
     text-align: center;
     color: #fff;
     max-width: 320px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
     margin-left: 52px;
     margin-right: 52px;
@@ -381,6 +402,14 @@ button {
 
     }
 
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mob-tablet.jpg);
+        }
+    }
+
     .main-title {
         color: #ffffff;
     }
@@ -399,8 +428,10 @@ button {
         color: #fff;
         max-width: 768px;
 
+        margin-bottom: 36px;
+        margin-left: 120px;
+        margin-right: 120px;
 
-        margin: auto 120px;
 
 
     }
@@ -414,14 +445,14 @@ button {
         height: 56px;
         border: none;
         border-radius: 4px;
-        margin-bottom: 112px;
+        padding-bottom: 112px;
 
         margin-left: auto;
         margin-right: auto;
         padding: 16px 32px;
 
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        margin-bottom: 116px;
+
     }
 
     .order-service:hover,
@@ -459,7 +490,7 @@ button {
         margin-left: auto;
         margin-right: auto;
         max-width: 1440px;
-        height: 600px;
+        height: auto;
 
 
 
@@ -486,6 +517,7 @@ button {
         max-width: 496px;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 48px;
 
 
     }
@@ -578,7 +610,7 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -1602,13 +1634,14 @@ button {
 
 .page-footer {
     background-color: #2e2f42;
-    padding: 96px 16px;
+    padding: 96px 0px;
 
 
 }
 
 .footer-content {
     align-items: center;
+    margin-bottom: 72px;
 }
 
 .logo-footer-span {
@@ -1620,7 +1653,7 @@ button {
     display: flex;
     gap: 16px;
     justify-content: center;
-    padding-bottom: 72px;
+
 }
 
 .social-link-footer {
@@ -1646,15 +1679,15 @@ button {
 
 .logo {
     display: inline-block;
-    margin-left: 72px;
+
 }
 
 .logo:hover {
-    background-color: #31d0aa;
+    color: #31d0aa;
 }
 
 .logo:focus {
-    background-color: #31d0aa;
+    color: #31d0aa;
 }
 
 .logo-footer {
@@ -1668,7 +1701,7 @@ button {
     max-width: 264px;
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 72px;
+
     text-align: left;
 
 
@@ -1678,6 +1711,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 72px;
+
 }
 
 .social-text {
@@ -1724,7 +1759,7 @@ button {
 .label-input-footer {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -1780,6 +1815,7 @@ button {
         align-items: baseline;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 108px;
 
     }
 
@@ -1843,7 +1879,7 @@ button {
     }
 
     .social-container {
-        margin-right: 80px;
+        margin-right: 164px;
 
     }
 
@@ -2808,16 +2844,16 @@ button {
 
 .mobile-menu {
     border-radius: 4px;
-    width: 288px;
+    width: 320px;
 
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    background: #fcfcfc;
+
+
     min-height: 623px;
-    position: absolute;
+
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fcfcfc;
+
+
     overflow: auto;
     border-radius: 4px;
 
@@ -2830,8 +2866,10 @@ button {
 .mobile-menu-item {
     display: flex;
     flex-direction: column;
+
     gap: 40px;
-    padding-bottom: 168px;
+    margin-bottom: 168px;
+
 }
 
 .mob-menu-item {
@@ -2844,6 +2882,10 @@ button {
 
 }
 
+.mob-social {
+    justify-content: left;
+}
+
 .mob-menu-item:focus,
 .mob-menu-item:hover {
     color: #404bbf;
@@ -2851,17 +2893,17 @@ button {
 
 .mob-contacts-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 24px;
     padding-bottom: 48px;
 }
 
 .close-button-mobile {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    height: 24px;
-    width: 24px;
+    top: 16px;
+    right: 16px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2889,6 +2931,11 @@ button {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
+
+
+}
+
+.tel-link {
     color: #4d5ae5;
 }
 
