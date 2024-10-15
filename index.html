@@ -144,7 +144,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/img-guerrero.jpg"
+                srcset="./images/img-guerrero.jpg, ./images/imgmark.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -205,7 +205,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/img-ford.jpg"
+                srcset="./images/img-ford.jpg, ./images/imgtom.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -265,7 +265,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/img-garcia.jpg"
+                srcset="./images/img-garcia.jpg, ./images/imgcamila"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -324,7 +324,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/img-wilson.jpg"
+                srcset="./images/img-wilson.jpg, ./images/imgdan.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -394,7 +394,7 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/banking-app.jpg"
+                  srcset="./images/banking-app.jpg, ./images/imgbank.jpg"
                   alt="Banking"
                   width="360"
                   height="260"
@@ -413,7 +413,10 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/cashless-payment.jpg,
+                    ./images/imgproject.jpg
+                  "
                   alt="Cashless"
                   width="360"
                   height="260"
@@ -432,7 +435,7 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/meditation-app.jpg"
+                  srcset="./images/meditation-app.jpg, ./images/imgmedi.jpg"
                   alt="Meditation"
                   width="360"
                   height="260"
@@ -451,7 +454,7 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/taxi-service.jpg"
+                  srcset="./images/taxi-service.jpg, ./images/imgtaxi.jpg"
                   alt="Taxi"
                   width="360"
                   height="260"
@@ -470,7 +473,10 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/screen-illustrations.jpg,
+                    ./images/imgscreen.jpg
+                  "
                   alt="Screen"
                   width="360"
                   height="260"
@@ -489,7 +495,7 @@
             <li class="portfolio-list-item">
               <div class="cont">
                 <img
-                  src="./images/online-courses.jpg"
+                  srcset="./images/online-courses.jpg, ./images/imgonline.jpg"
                   alt="Courses"
                   width="360"
                   height="260"
@@ -694,23 +700,27 @@
 
     <!------mobil-menu-->
     <div class="burger-menu" data-menu>
-      <div class="mobile-menu">
+      <div class="mobile-menu container">
         <button class="close-button-mobile" data-menu-close type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
-        <ul class="mobile-menu-item">
-          <li class="mob-menu-link">
-            <a class="mob-menu-item link-studio" href="./index.html">Studio</a>
-          </li>
-          <li class="mob-menu-link">
-            <a class="mob-menu-item" href="">Portfolio</a>
-          </li>
-          <li class="mob-menu-link">
-            <a class="mob-menu-item" href="">Contacts</a>
-          </li>
-        </ul>
+        <div class="mob-nav">
+          <ul class="mobile-menu-item">
+            <li class="mob-menu-link">
+              <a class="mob-menu-item link-studio" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-link">
+              <a class="mob-menu-item" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-link">
+              <a class="mob-menu-item" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
         <address class="mobile-contacts">
           <ul class="mob-contacts-list">
             <li class="mob-contacts-item">
